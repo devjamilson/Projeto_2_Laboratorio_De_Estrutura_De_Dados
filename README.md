@@ -1,1 +1,1 @@
-# Projeto-1---Laborat-rio-de-Estrutura-de-Dados
+# Laboratorio de Estrutura de Dados
