@@ -8,45 +8,45 @@ public class InsertionSort extends Funcoes {
         System.out.println("________________________INSERTION SORT________________________");
         System.out.println();
         System.out.println("ORDEM ALFABETICA:");
-        System.out.println("Medio Caso:");
+        System.out.println("MEDIO CASO:");
         criarArquivo(insertionSortTicker(vetor), "b3stocks_ticker_insertionSort_medioCaso.csv");
         System.out.println("Arquivo \"b3stocks_ticker_insertionSort_medioCaso.csv\" criado com sucesso.");
 
-        System.out.println("Melhor Caso:");
+        System.out.println("MELHOR CASO:");
         criarArquivo(insertionSortTicker(vetor), "b3stocks_ticker_insertionSort_melhorCaso.csv");
         System.out.println("Arquivo \"b3stocks_ticker_insertionSort_melhorCaso.csv\" criado com sucesso.");
 
-        System.out.println("Pior Caso:");
+        System.out.println("PIOR CASO:");
         criarArquivo(insertionSortTicker(inverterVetor(vetor)), "b3stocks_ticker_insertionSort_piorCaso.csv");
         System.out.println("Arquivo \"b3stocks_ticker_insertionSort_piorCaso.csv\" criado com sucesso.");
         
         System.out.println();
         System.out.println("VOLUME:");
         System.out.println();
-        System.out.println("Medio Caso:");
+        System.out.println("MEDIO CASO:");
         criarArquivo(insertionSortVolume(vetor), "b3stocks_volume_insertionSort_medioCaso.csv");
         System.out.println("Arquivo \"b3stocks_volume_insertionSort_medioCaso.csv\" criado com sucesso.");
 
-        System.out.println("Melhor Caso:");
+        System.out.println("MELHOR CASO:");
         criarArquivo(insertionSortVolume(vetor), "b3stocks_volume_insertionSort_melhorCaso.csv");
         System.out.println("Arquivo \"b3stocks_volume_insertionSort_melhorCaso.csv\" criado com sucesso.");
 
-        System.out.println("Pior Caso:");
+        System.out.println("PIOR CASO:");
         criarArquivo(insertionSortVolume(inverterVetor(vetor)), "b3stocks_volume_insertionSort_piorCaso.csv");
         System.out.println("Arquivo \"b3stocks_volume_insertionSort_piorCaso.csv\" criado com sucesso.");
 
         System.out.println();
         System.out.println("VARIACOES DIARIAS:");
         System.out.println();
-        System.out.println("Medio Caso:");
+        System.out.println("MEDIO CASO:");
         criarArquivo(insertionSortVariacoes(vetor), "b3stocks_fluctuations_insertionSort_medioCaso.csv");
         System.out.println("Arquivo \"b3stocks_fluctuations_insertionSort_medioCaso.csv\" criado com sucesso.");
 
-        System.out.println("Melhor Caso:");
+        System.out.println("MELHO CASO:");
         criarArquivo(insertionSortVariacoes(vetor), "b3stocks_fluctuations_insertionSort_melhorCaso.csv");
         System.out.println("Arquivo \"b3stocks_fluctuations_insertionSort_melhorCaso.csv\" criado com sucesso.");
 
-        System.out.println("Pior Caso:");
+        System.out.println("PIOR CASO:");
         criarArquivo(insertionSortVariacoes(inverterVetor(vetor)), "b3stocks_fluctuations_insertionSort_piorCaso.csv");
         System.out.println("Arquivo \"b3stocks_fluctuations_insertionSort_piorCaso.csv\" criado com sucesso.");
     }

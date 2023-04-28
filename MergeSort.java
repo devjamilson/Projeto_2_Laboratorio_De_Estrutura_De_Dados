@@ -9,45 +9,45 @@ public class MergeSort extends Funcoes{
         System.out.println();
         System.out.println("ORDEM ALFABETICA:");
         System.out.println();
-        System.out.println("Medio Caso:");
+        System.out.println("MEDIO CASO:");
         criarArquivo(MergeSortTickerTempo(vetor), "b3stocks_ticker_mergeSort_medioCaso.csv");
         System.out.println("Arquivo \"b3stocks_ticker_mergeSort_medioCaso.csv\" criado com sucesso.");
 
-        System.out.println("Melhor Caso:");
+        System.out.println("MELHOR CASO:");
         criarArquivo(MergeSortTickerTempo(vetor), "b3stocks_ticker_mergeSort_melhorCaso.csv");
         System.out.println("Arquivo \"b3stocks_ticker_mergeSort_melhorCaso.csv\" criado com sucesso.");
 
-        System.out.println("Pior Caso:");
+        System.out.println("PIOR CASO:");
         criarArquivo(MergeSortTickerTempo(inverterVetor(vetor)), "b3stocks_ticker_mergeSort_piorCaso.csv");
         System.out.println("Arquivo \"b3stocks_ticker_mergeSort_piorCaso.csv\" criado com sucesso.");
 
         System.out.println();
         System.out.println("VOLUME:");
         System.out.println();
-        System.out.println("Medio Caso:");
+        System.out.println("MEDIO CASO:");
         criarArquivo(MergeSortVolumeTempo(vetor), "b3stocks_volume_mergeSort_medioCaso.csv");
         System.out.println("Arquivo \"b3stocks_volume_mergeSort_medioCaso.csv\" criado com sucesso.");
 
-        System.out.println("Melhor Caso:");
+        System.out.println("MELHOR CASO:");
         criarArquivo(MergeSortVolumeTempo(vetor), "b3stocks_volume_mergeSort_melhorCaso.csv");
         System.out.println("Arquivo \"b3stocks_volume_mergeSort_melhorCaso.csv\" criado com sucesso.");
 
-        System.out.println("Pior Caso:");
+        System.out.println("PIOR CASO:");
         criarArquivo(MergeSortVolumeTempo(inverterVetor(vetor)), "b3stocks_volume_mergeSort_piorCaso.csv");
         System.out.println("Arquivo \"b3stocks_volume_mergeSort_piorCaso.csv\" criado com sucesso.");
 
         System.out.println();
         System.out.println("VARIACOES DIARIAS:");
         System.out.println();
-        System.out.println("Medio Caso:");
+        System.out.println("MEDIO CASO:");
         criarArquivo(MergeSortVariacoesTempo(vetor), "b3stocks_fluctuations_mergeSort_medioCaso.csv");
         System.out.println("Arquivo \"b3stocks_fluctuations_mergeSort_medioCaso.csv\" criado com sucesso.");
 
-        System.out.println("Melhor Caso:");
+        System.out.println("MELHOR CASO:");
         criarArquivo(MergeSortVariacoesTempo(vetor), "b3stocks_fluctuations_mergeSort_melhorCaso.csv");
         System.out.println("Arquivo \"b3stocks_fluctuations_mergeSort_melhorCaso.csv\" criado com sucesso.");
 
-        System.out.println("Pior Caso:");
+        System.out.println("PIOR CASO:");
         criarArquivo(MergeSortVariacoesTempo(inverterVetor(vetor)), "b3stocks_fluctuations_mergeSort_piorCaso.csv");
         System.out.println("Arquivo \"b3stocks_fluctuations_mergeSort_piorCaso.csv\" criado com sucesso.");
     }

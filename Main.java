@@ -5,11 +5,10 @@ public class Main extends Funcoes{
         
         String caminho = "./b3_stocks_1994_2020.csv";
         String caminho2 = "./b3stocks_T1.csv";
-        String caminhoTeste = "./b3_stock_teste.csv";
         
         
         TransformarData transformarData = new TransformarData();
-        transformarData.transformacao(caminho);
+        transformarData.transform(caminho);
 
         FiltrarRegistro filtrarRegistro = new FiltrarRegistro();
         filtrarRegistro.filtrar(caminho2);

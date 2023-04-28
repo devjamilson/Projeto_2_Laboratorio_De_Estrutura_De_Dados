@@ -13,12 +13,12 @@ public class FiltrarRegistro extends Funcoes{
         int i = 0;
 
         try{
-            FileWriter novoArquivo = new FileWriter("b3stocks_F1.csv"); //Criação do novo arquivo para escrita
+            FileWriter newFile = new FileWriter("b3stocks_F1.csv"); //Criação do novo arquivo para escrita
             BufferedReader arq = new BufferedReader(new InputStreamReader(new FileInputStream(caminho))); 
             
-            PrintWriter escrever = new PrintWriter(novoArquivo);
+            PrintWriter writer = new PrintWriter(newFile);
             colunas = arq.readLine(); 
-            escrever.println(colunas); //Escreve a primeira linha
+            writer.println(colunas); //Escreve a primeira linha
 
             Registro[] vetorRegistro = construirVetorRegistro(caminho); //Criação do vetor de objetos do tipo Registro
             OrdenarPorData(vetorRegistro);
@@ -34,7 +34,7 @@ public class FiltrarRegistro extends Funcoes{
                         indexMaiorVolume = i+1;
                     }
                 }else{
-                    escrever.println(vetorRegistro[indexMaiorVolume].toString());
+                    writer.println(vetorRegistro[indexMaiorVolume].toString());
                     maiorVolume = vetorRegistro[i+1].getVolume();
                     indexMaiorVolume = i + 1;
                 }
@@ -44,9 +44,9 @@ public class FiltrarRegistro extends Funcoes{
 
             System.out.println("Arquivo \"b3stocks_F1.csv\" criado com sucesso.");
 
-            escrever.close();
+            writer.close();
             arq.close();
-            novoArquivo.close();
+            newFile.close();
         }//Fim do bloco try
         catch(IOException ex){
             System.out.println("Arquivo não encontrado!");

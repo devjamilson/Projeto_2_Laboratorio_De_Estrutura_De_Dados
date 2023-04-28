@@ -10,39 +10,39 @@ import java.util.Date;
 
 public class TransformarData extends Funcoes{
 
-    public void transformacao(String caminho){
+    public void transform(String caminho){
 
-        String colunas;
-        String linha = null;
+        String column;
+        String row = null;
 
         try{
-            FileWriter novoArquivo = new FileWriter("b3stocks_T1.csv"); //Criação do novo arquivo para escrita
+            FileWriter newFile = new FileWriter("b3stocks_T1.csv"); //Criação do novo arquivo para escrita
             BufferedReader arq = new BufferedReader(new InputStreamReader(new FileInputStream(caminho))); //Responsável pela leitura do arquivo a ser transformado// 
             
-            PrintWriter escrever = new PrintWriter(novoArquivo);
-            colunas = arq.readLine();
-            escrever.println(colunas);
+            PrintWriter writer = new PrintWriter(newFile);
+            column = arq.readLine();
+            writer.println(column);
 
-            while((linha = arq.readLine()) != null) {
+            while((row = arq.readLine()) != null) {
                 
-                String arrayDados[] = separarDados(linha);
+                String arrayDados[] = separarDados(row);
 
-                escrever.println(formatarData(arrayDados[0])+","+arrayDados[1]+","+arrayDados[2]+","+arrayDados[3]+","+arrayDados[4]+","+arrayDados[5]+","+arrayDados[6]);
+                writer.println(formatDate(arrayDados[0])+","+arrayDados[1]+","+arrayDados[2]+","+arrayDados[3]+","+arrayDados[4]+","+arrayDados[5]+","+arrayDados[6]);
                 
             }
             System.out.println("Arquivo \"b3stocks_T1.csv\" criado com sucesso.");
 
-            escrever.close();
+            writer.close();
             arq.close();
-            novoArquivo.close();
+            newFile.close();
         }//Fim do bloco try
         catch(IOException ex){
-            System.out.println("Arquivo não encontrado!");
+            System.out.println("O arquivo nao foi encontrado!");
         }//Fim do catch
-    }//Fim do método transformacao()
+    }//Fim do método transform()
    
 
-    private String formatarData(String data){ // Transforma de YYYY-MM-DD para o formato DD/MM/AAAA //
+    private String formatDate(String data){ // Transforma de YYYY-MM-DD para o formato DD/MM/AAAA //
         
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd"); //Define o formato que irá aceitar//
         String dateToStr = null;
@@ -57,6 +57,6 @@ public class TransformarData extends Funcoes{
         }
         
         return dateToStr;
-    }//Fim do método formatarData()
+    }//Fim do método formatDate()
 
 }
