@@ -4,7 +4,8 @@ Primeiro Projeto - Laboratório de Estrutura de Dados
 
 Alunos: 
 
-José Jamilson Ferreira da Silva - 211080098
+José Jamilson Ferreira da Silva - 211080098<br/>
+Noiana de Paula Noia - 222080469
 
 
 # Instrunções 
