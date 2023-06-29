@@ -19,18 +19,9 @@ public class Main extends Funcoes{
 
         Registro[] baseDeDados = construirVetorRegistro(caminho2);
         //Registro[] baseDeDados = construirVetorMenor(caminhoTeste); //Vetor menor para testar as ordenações
-        
-        InsertionSort objInsertionSort = new InsertionSort();
-        objInsertionSort.gerarInsertionSort(baseDeDados);
-
-        SelectionSort objSelectionSort = new SelectionSort();
-        objSelectionSort.gerarSelectionSort(baseDeDados);
 
         QuickSort objQuickSort = new QuickSort();
         objQuickSort.gerarQuickSort(baseDeDados);
-
-        QuickSortMedianaDe3 objQuickSortMedianaDe3 = new QuickSortMedianaDe3();
-        objQuickSortMedianaDe3.gerarQuickSortMed3(baseDeDados);
 
         MergeSort objMergeSort = new MergeSort();
         objMergeSort.gerarMergeSort(baseDeDados);
@@ -38,8 +29,6 @@ public class Main extends Funcoes{
         HeapSort objHeapSort = new HeapSort();
         objHeapSort.gerarHeapSort(baseDeDados);
 
-        CountingSort objCountingSort = new CountingSort();
-        objCountingSort.gerarcountingSort(baseDeDados);
         
 
     }//Fim do main
